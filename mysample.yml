@@ -1,5 +1,5 @@
 --- 
-- hosts: mywebserver
+- hosts: my DB
   become: yes 
   tasks: 
       - name: i want to install apache on ubuntu node 
