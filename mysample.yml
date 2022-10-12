@@ -14,13 +14,13 @@
             state: started
         when: ansible_os_family--"debian"
 
-      - name: i want to install apache on redhat node
+      - name: i want to install apache on redHat node
         yum:
             name: httpd
             state: present
-        when: ansible_os_family--"Redhat"
+        when: ansible_os_family--"RedHat"
       - name: i want to start/stop webserver on redhat node
         service:
             name: httpd
             state: started
-        when: ansible_os_family--"Redhat"
+        when: ansible_os_family--"RedHat"
