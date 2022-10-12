@@ -5,5 +5,22 @@
       - name: i want to install apache
         apt: 
             name: apache2
-            state: absent
-      
+            state: present
+        when: ansible_os_family--"debian"  
+        
+      - name: i want to start webserver on ubuntu server
+        service:
+            name: apache2
+            state: started
+        when: ansible_os_family--"debian"
+
+      - name: i want to install apache on redhat node
+        yum:
+            name: httpd
+            state: present
+        when: ansible_os_family--"Redhat"
+      - name: i want to start/stop webserver on redhat node
+        service:
+            name: httpd
+            state: started
+        when: ansible_os_family--"Redhat"
