@@ -1,6 +1,6 @@
 ---
 
 mywebserveronubuntu : apache222
-mywebserveronRedHat : httpd
+mywebserveronRedHat : httpdd
 myjavajdkonubuntu : openjdk-8-jre
 myjavajdkonRedHat : java-1.8.0-openjdk
