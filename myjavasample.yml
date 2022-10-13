@@ -6,11 +6,11 @@
         apt:
            name: "{{mywebserveronubuntu}}"
            state: present
-        when: ansible_os_family=="Debian"
+        when: ansible_os_family== "Debian"
 
 
       - name: i want to install java 8 version on RadHat node
         yum:
            name: "{{mywebserveronRedHat}}"
            state: present
-        when: ansible_os_family=="RadHat"  
+        when: ansible_os_family== "RadHat"  
