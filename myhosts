@@ -4,3 +4,8 @@
 [my DB]
 172.31.29.21
 172.31.25.08
+
+
+[mywebserver:vars]
+mywebserveronubuntu = apache2
+mywebserveronRedHat = httpd
