@@ -6,7 +6,7 @@
 172.31.25.08
 
 
-[mywebserver:vars]
+[mywebserver: vars]
  mywebserveronubuntu = apache2
  mywebserveronRedHat = httpd
  myjavaonubuntu      = openjdk-8-jre
