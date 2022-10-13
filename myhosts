@@ -7,7 +7,7 @@
 
 
 [mywebserver:vars]
-mywebserveronubuntu = apache2
-mywebserveronRedHat = httpd
-myjavaonubuntu      = openjdk-8-jre
-myjavaonRedHat      = java-1.8.0-openjdk
+ mywebserveronubuntu = apache2
+ mywebserveronRedHat = httpd
+ myjavaonubuntu      = openjdk-8-jre
+ myjavaonRedHat      = java-1.8.0-openjdk
