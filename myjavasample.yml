@@ -1,5 +1,5 @@
 --- 
-- hosts: webserverhosts 
+- hosts: webservarhosts 
   become: yes 
   tasks:
       - name: i want to install java 8 version on ubuntu node
