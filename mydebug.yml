@@ -4,7 +4,17 @@
   tasks:
       - name: i want to run linux command 
         command: hostname
-        register: myresultt
+        register: myresult
       - name: i want to display linux command output 
         debug:
             msg: "{{myresult}}"  
+
+      - name: i want to install wget 
+        apt: 
+            name: wget
+            state: present
+
+      - name: i want to install tree
+        apt: 
+            name: tree
+            state: present            
