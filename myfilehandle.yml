@@ -6,4 +6,10 @@
      - name: i want to install webserver
        apt: 
            name: apache2
-           state: present     
+           state: present
+     -  name: i want to change template 
+        template:
+           src: myindex.j2
+           dest: /var/www/html/jindex.html             
+              
+     
