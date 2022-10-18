@@ -3,8 +3,8 @@
   become: yes
   tasks:
       - name: i want to run linux command 
-        command: hostnameee
-        register: myresult
+        command: hostname
+        register: myresultt
       - name: i want to display linux command output 
         debug:
             msg: "{{myresult}}"  
