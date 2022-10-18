@@ -3,7 +3,7 @@
   become: yes
   tasks:
       - name: i want to run linux command 
-        command: hostname
+        command: uname
         register: myresult
       - name: i want to display linux command output 
         debug:
