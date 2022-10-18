@@ -5,7 +5,7 @@
         myvar1: tree
         myvar2: wget
         myvar3: git
-     tasks: 
+        tasks: 
         -name: i want to display vars value
         debug:
             msg: "{{my var1}}"
