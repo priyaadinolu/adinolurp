@@ -4,7 +4,7 @@
   vars:
    myvar1: tree
    myvar2: wget
-   yvar3: git
+   myvar3: git
   tasks: 
      - name: i want to display vars value 
        debug:
@@ -15,8 +15,9 @@
          state: present 
          when: ansible_os_family=="debian"
          loop:
-               - "{{ myvar1}}"
+               - "{{myvar1}}"
                - "{{myvar2}}" 
+               - "{{myvar3:}}"
 
             
       
