@@ -11,9 +11,8 @@
         apt:
            name: wget
            state: present
-           tags: wget
       - name: i want to install git
         apt:
            name: git
            state: present 
-           tags: git    
+              
