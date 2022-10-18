@@ -1,5 +1,5 @@
 ---
-- hosts: 172.32.24.33
+- hosts: 172.31.24.33
   become: yes
   vars:
    myvar1: tree
