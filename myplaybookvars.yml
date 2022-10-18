@@ -9,3 +9,17 @@
      - name: i want to display vars value 
        debug:
             msg: "{{myvar1}}"
+     - name: i want to install package 
+       apt:
+         name: "{{item}}"
+         state: present 
+         when: ansible_os_family=="debian"
+         loop:
+               - "{{ myvar1}}"
+               - "{{myvar2}}" 
+
+            
+      
+      
+      
+
