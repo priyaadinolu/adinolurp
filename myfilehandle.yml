@@ -1,0 +1,9 @@
+--- 
+- hosts: 172.31.24.33
+  become: yes
+  tasks: 
+     - name: i want to create file
+       file:
+          path: /home/ubuntu/myvertex.txt
+          state: touch
+          

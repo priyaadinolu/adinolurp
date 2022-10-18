@@ -11,8 +11,10 @@
         apt:
            name: wget
            state: present
+           tags: mytree
       - name: i want to install git
         apt:
            name: git
            state: present 
+           tags: mytree
               
