@@ -5,9 +5,9 @@
      - include_tasks: myfile.yml
     
     
-     - name: i want to install webserver
+     - name: i want to install tree
        apt: 
-           name: apach2
+           name: tree
            state: present     
 
                      
