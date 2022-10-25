@@ -4,13 +4,13 @@
   tasks:
       - name: i want to install java 8 version on ubuntu node
         apt:
-            name: "{{javajdkonubuntu}}"
+            name: "{{myjavajdkonubuntu}}"
             state: present
-        when: ansible_os_family=="Debian"
+        when: ansible_os_family == "Debian"
 
 
       - name: i want to install java 8 version on RadHat node
         yum:
-            name: "{{javajdkonRedHat}}"
+            name: "{{myjavajdkonRedHat}}"
             state: present
-        when: ansible_os_family=="RedHat"  
+        when: ansible_os_family == "RedHat"  
