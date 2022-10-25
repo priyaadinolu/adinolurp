@@ -3,10 +3,12 @@
    become: yes
    tasks: 
      - include_tasks: myfile.yml
+    
+    
      - name: i want to install apache
        apt: 
-            name: tree
-            state: present     
+           name: apach2
+           state: present     
 
                      
               
