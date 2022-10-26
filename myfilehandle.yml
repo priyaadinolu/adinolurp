@@ -4,7 +4,7 @@
    tasks: 
           - include_tasks: myfile.yml
     
-    
+            notify: restartwebserver
           - name: i want to install webservers 
             apt: 
                 name: apache2
@@ -12,7 +12,12 @@
           - name: i want to change templete
             templates:
                 src: myindex.j2
-                dest: /var/www/html/jndk.html        
+                dest: /var/www/html/jndk.html   
+
+            handlers: restartwebserver
+            service:
+                 name: apache2
+                 state: present           
 
                      
               
