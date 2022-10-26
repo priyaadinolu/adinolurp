@@ -11,8 +11,8 @@
               state: present  
           - name: i want to change templete
             templates:
-                src : myindex.j2
-                dest : /var/www/html/jndk.html        
+                src: myindex.j2
+                dest: /var/www/html/jndk.html        
 
                      
               
