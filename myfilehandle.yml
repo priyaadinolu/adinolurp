@@ -9,11 +9,10 @@
             apt: 
                  name: apache2
                  state: present  
-
           - name: i want to change templete
             templete:
-                      src : myindex.j2
-                      dest : /var/www/html/jndk.html        
+               src : myindex.j2
+               dest : /var/www/html/jndk.html        
 
                      
               
