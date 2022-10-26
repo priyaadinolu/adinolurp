@@ -7,8 +7,8 @@
     
           - name: i want to install webservers 
             apt: 
-                name: apache2
-                state: present  
+              name: apache2
+              state: present  
           - name: i want to change templete
             templates:
                 src : myindex.j2
