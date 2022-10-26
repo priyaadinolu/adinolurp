@@ -10,7 +10,7 @@
                name: apache2
                state: present  
       - name: i want to change templete
-        templete:
+        templates:
                src : myindex.j2
                dest : /var/www/html/jndk.html        
 
