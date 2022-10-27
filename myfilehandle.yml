@@ -2,22 +2,24 @@
 -  hosts: 172.31.15.160
    become: yes
    tasks: 
-          - include_tasks: myfile.yml
-    
-            notify: restartwebserver
-          - name: i want to install webservers 
-            apt: 
-                name: apache2
-                state: present  
-          - name: i want to change templete
-            templates:
-                src: myindex.j2
-                dest: /var/www/html/jndk.html   
+    - include_tasks: myfile.yml     
+   
+    - name: i want to install webservers 
+      apt: 
+        name: apache2
+        state: present
+      notify: restartwebserver     
+          
+    - name: i want to change templete
+      template:
+            src: myindex.j2
+            dest: /var/www/html/jndk.html 
+      notify: restartwebserver         
 
-            handlers: restartwebserver
-            service:
-                 name: apache2
-                 state: present           
+      handlers: restartwebserver
+      service:
+            name: apache2
+            state: present           
 
                      
               
