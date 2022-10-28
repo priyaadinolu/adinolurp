@@ -1,5 +1,4 @@
 ---
-# tasks file for mywebrole
 - name: i want to install webserver 
   apt:
       name: apache2
@@ -8,6 +7,6 @@
 
 - name: i want to change template 
   template:
-          src: template/index.j2
-          dest: /var/www/html/index.html 
+      src: template/index.j2
+      dest: /var/www/html/index.html 
   notify: restartwebserver     
