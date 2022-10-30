@@ -1,5 +1,5 @@
 --- 
-- hosts: webservarhosts
+- hosts: 172.31.0.161
   become: yes
   roles:
   - {role: tomcatrole ,when: ansible_os_family=="Debian"}
