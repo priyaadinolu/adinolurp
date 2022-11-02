@@ -8,4 +8,4 @@
 - name: install java jdk
   apt:
     name: default-jdk
-    satate: present   
+    state: present   
