@@ -1,0 +1,22 @@
+---
+# 7.2 tomcat web management / tomcatuser.xml 
+- name: i want to change template
+  template:
+     src: template/tomcatuserxml.j2
+     dest: sudo nano /opt/tomcat/conf/tomcat-users.xml 
+
+# 7.2 tomcat web management / manage app
+- name: i want to change context file
+  template:
+     src: template/manageapp.j2
+     dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+
+# 7.2 tomcat web management / manage app
+- name: i want to change host cotext file
+  template:
+     src: template/hostmanagerapp.j2
+     dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
+
+
+
+
