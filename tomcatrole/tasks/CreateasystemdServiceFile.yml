@@ -2,5 +2,5 @@
 # 5.4 : systemd service file4 
  - name: i want to change template
    template:
-     src: tomcat/tomcatservice.j2
+     src: template/tomcatservice.j2
      dest: /etc/systemd/system/tomcat.service
